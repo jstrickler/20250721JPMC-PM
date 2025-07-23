@@ -1,8 +1,8 @@
+# apple = "red delicious"
 fruits = ['apple', 'cherry', 'orange', 'kiwi', 'banana', 'pear', 'fig'] # list
 full_name = "Guido van Rossum"  # str
 place = "Durham", "NC"  # tuple
 data = b'wombat'   # bytes
-
 
 print(f"{fruits = }")
 print(f"fruits[3]: {fruits[3]}    len(fruits): {len(fruits)}\n")

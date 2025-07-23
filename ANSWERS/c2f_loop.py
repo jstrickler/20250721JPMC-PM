@@ -5,7 +5,11 @@ while True:
     if celsius == '':
         continue
 
-    celsius = float(celsius)
-    fahrenheit = ((9 * celsius) / 5) + 32
-    print(f'{celsius:.1f}\u00B0 C is {fahrenheit:.1f}\u00B0 F\n')
+    try:
+        celsius = float(celsius)
+    except ValueError as err:
+        print("Please enter a number")
+    else:
+        fahrenheit = ((9 * celsius) / 5) + 32
+        print(f'{celsius:.1f}\u00B0 C is {fahrenheit:.1f}\u00B0 F\n')
 

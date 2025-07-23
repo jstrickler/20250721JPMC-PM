@@ -16,8 +16,24 @@ start = 5
 print(f"{start = }")
 print(f"{fruits[start:start + 3] = }\n")  # 3 elements starting at 'start'
 
+print(f"{fruits[:5] = }")
+
 print(f"{fruits[10:] = }\n") # index 10 through end
 print(f"{fruits[-5:] = }\n") # last 5 elements (index -5, -4, ...)
 
 print(f"{fruits[1:-1] = }\n")  # all but first and last
 print(f"{fruits[:-10] = }\n")  # all but last 10
+
+print(f"{fruits = }\n")
+
+more_fruits = ['papaya', 'strawberry', 'plum']
+fruits[2:2] = more_fruits
+print(f"{fruits = }\n")
+
+print(f"{fruits[3:12:3] = }\n")
+
+print(f"{fruits[2:2] = }\n")
+
+# list comprehension
+fruits5 = [f for f in fruits if len(f) > 5]
+print(f"{fruits5 = }\n")

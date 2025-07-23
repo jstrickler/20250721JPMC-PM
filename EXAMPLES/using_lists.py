@@ -1,3 +1,6 @@
+dogs = []
+cats = list()
+
 cities = ['Portland', 'Pittsburgh', 'Peoria']
 print(f"cities: {cities}\n")
 
