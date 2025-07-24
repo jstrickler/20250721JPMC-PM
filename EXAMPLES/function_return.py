@@ -6,6 +6,7 @@ print(f"{h = }")
 
 def hello():
     print("Hello, world")
+    # return None
 
 h = hello()
 print(f"{h = }")
@@ -16,3 +17,9 @@ def double(x):
 d = double(10)
 print(f"{d = }")
 
+def doit(a, b):
+    print(f"{a = } {b = }")
+
+doit(5, 10)
+doit('spam', 'ham')
+# doit(8)  INVALID 

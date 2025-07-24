@@ -1,4 +1,5 @@
 import sys
+# argparse will parse the entire command line
 
 first_arg = sys.argv.pop(1)
 
